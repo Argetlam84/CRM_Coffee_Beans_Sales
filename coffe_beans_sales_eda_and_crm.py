@@ -1,3 +1,4 @@
+# Warning!!! Read the Conclusion below 
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -150,6 +151,7 @@ seg_map ={
 # creating segments according to the rf scores
 rfm["Segment"] = rfm["RF Score"].replace(seg_map,regex=True)
 rfm.head()
+
 
 rfm[rfm["Segment"] == "champions"]
 
